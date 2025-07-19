@@ -7,13 +7,6 @@ css
 }
 
 /* General Reset */
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: linear-gradient(to right, #6a11cb, #2575fc); /* New colorful background */
-  color: #333;
-}
 
 header {
   background-color: #1a1a1a;
@@ -29,19 +22,12 @@ body {
   color: #333;
 }
 
-.intro, .skills, .gallery {
-  padding: 20px;
-  text-align: center;
-  background: white; /* currently white */
-  margin: 10px;
-  border-radius: 8px;
-}
 
 .intro, .skills, .gallery {
   padding: 20px;
   text-align: center;
-  background: rgba(255, 255, 255, 0.85); /* white with transparency */
+  background: rgba(255, 255, 255, 0.85);
   margin: 10px;
   border-radius: 8px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow for depth */
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
