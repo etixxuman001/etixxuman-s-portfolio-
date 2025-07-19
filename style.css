@@ -6,7 +6,16 @@ css
   font-weight: bold;
 }
 
-/* General Reset */
+/* Add this for your images */
+.profile-img, .gallery img {
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  border: 2px solid #ccc;
+  display: block;
+  margin: 0 auto;
+}
 
 header {
   background-color: #1a1a1a;
