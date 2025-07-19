@@ -5,12 +5,13 @@ css
   font-size: 22px;
   font-weight: bold;
 }
+
 /* General Reset */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  background: #f4f4f4;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* New colorful background */
   color: #333;
 }
 
@@ -18,71 +19,29 @@ header {
   background-color: #1a1a1a;
   color: white;
   padding: 20px;
-  text-align: center;
 }
 
-nav {
-  margin-top: 10px;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  margin: 0 10px;
-  font-weight: bold;
-}
-
-nav a:hover {
-  text-decoration: underline;
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to right, #6a11cb, #2575fc); /* colorful gradient */
+  color: #333;
 }
 
 .intro, .skills, .gallery {
   padding: 20px;
   text-align: center;
-  background: white;
+  background: white; /* currently white */
   margin: 10px;
   border-radius: 8px;
 }
 
-.profile-img {
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  margin-bottom: 10px;
-}
-
-.skills ul {
-  list-style: none;
-  padding: 0;
-}
-
-.skills li {
-  background: #ddd;
-  margin: 5px auto;
-  padding: 10px;
-  max-width: 300px;
-  border-radius: 5px;
-}
-
-.gallery .image-pair {
-  display: flex;
-  justify-content: center;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
-.gallery img {
-  width: 150px;
-  height: auto;
-  border: 2px solid #ccc;
-  border-radius: 5px;
-}
-
-footer {
-  background-color: #1a1a1a;
-  color: white;
+.intro, .skills, .gallery {
+  padding: 20px;
   text-align: center;
-  padding: 15px;
-  margin-top: 20px;
+  background: rgba(255, 255, 255, 0.85); /* white with transparency */
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1); /* subtle shadow for depth */
 }
