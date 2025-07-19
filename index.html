@@ -6,25 +6,30 @@ html
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Etixxuman's Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    section { display: none; }
+    section.active { display: block; }
+  </style>
 </head>
 <body>
   <header>
-  <h1>USMAN HAMISU IMAM</h1>
-<h2 class="nickname">ETIXXUMAN</h2>
-<p>Kano State, Nassarawa</p>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="contact.html">Contact</a>
+    <h1>USMAN HAMISU IMAM</h1>
+    <h2 class="nickname">ETIXXUMAN</h2>
+    <p>Kano State, Nassarawa</p>
+    <nav>
+      <a href="#" onclick="showSection('home')">Home</a>
+      <a href="#" onclick="showSection('skills')">About</a>
+      <a href="#" onclick="showSection('gallery')">Samples</a>
     </nav>
   </header>
 
-  <section class="intro">
+  <section id="home" class="intro active">
     <img src="my-profile.jpg" alt="My Profile" class="profile-img" />
     <h2>Welcome to My Portfolio</h2>
     <p>I’m a passionate photographer and editor with experience in graphic design, photo editing, and video editing.</p>
   </section>
 
-  <section class="skills">
+  <section id="skills" class="skills">
     <h2>My Skills</h2>
     <ul>
       <li>Graphic Design</li>
@@ -33,7 +38,7 @@ html
     </ul>
   </section>
 
-  <section class="gallery">
+  <section id="gallery" class="gallery">
     <h2>Photo Samples (Before & After)</h2>
     <div class="image-pair">
       <img src="before01.jpg" alt="Before 1" />
@@ -65,5 +70,12 @@ html
     <p>Email: iusmanhamisu@gmail.com</p>
     <p>&copy; 2025 Etixxuman. All rights reserved.</p>
   </footer>
+
+  <script>
+    function showSection(id) {
+      document.querySelectorAll("section").forEach(sec => sec.classList.remove("active"));
+      document.getElementById(id).classList.add("active");
+      }
+  </script>
 </body>
 </html>
