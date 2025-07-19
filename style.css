@@ -1,4 +1,10 @@
 css
+.nickname {
+  margin-top: 5px;
+  color: #00ff99;
+  font-size: 22px;
+  font-weight: bold;
+}
 /* General Reset */
 body {
   font-family: Arial, sans-serif;
